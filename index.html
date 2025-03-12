@@ -1,27 +1,77 @@
 <!DOCTYPE html>
-
 <html lang="fr">
-
 <head>
-
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Portfolio Massothérapeute</title>
-
-  <link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Massothérapeute</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <header>
+    <section id="accueil">
+        <h1>Bienvenue sur mon site de Massothérapie</h1>
+        <p>Je vous aide à retrouver bien-être et sérénité grâce à des soins personnalisés.</p>
+    </section>
 
-    <nav>
+    <section id="services">
+        <h2>Mes Services</h2>
+        <div class="service">
+            <h3>Massage Relaxant</h3>
+            <p>Un massage doux pour détendre votre corps et votre esprit.</p>
+        </div>
+        <div class="service">
+            <h3>Réflexologie</h3>
+            <p>Stimule les points réflexes pour améliorer votre santé générale.</p>
+        </div>
+        <div class="service">
+            <h3>Deep Tissue Massage</h3>
+            <p>Un massage plus profond pour soulager les tensions musculaires.</p>
+        </div>
+        <div class="service">
+            <h3>Conseil Bien-être & Suivi Personnalisé</h3>
+            <p>Des conseils adaptés pour améliorer votre qualité de vie au quotidien.</p>
+        </div>
+    </section>
 
-      <ul>
+    <section id="portfolio">
+        <h2>Mes Certificats</h2>
+        <div class="portfolio-images">
+            <img src="certificat1.jpg" alt="Certificat 1">
+            <img src="certificat2.jpg" alt="Certificat 2">
+            <img src="certificat3.jpg" alt="Certificat 3">
+        </div>
+    </section>
 
-        <li><a href="#accueil">Accueil</a></li>
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form id="contact-form">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
 
-        <li><a href="#services">Services</a></li>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Contactez-moi au : <strong>+33 123 456 789</strong></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
